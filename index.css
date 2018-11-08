@@ -14,11 +14,12 @@
 	background: #000;
 }
 #navigation {
-	margin-top: 20px;
+	margin: 20px 0px 0px 0px;
 	width: 235px;
 	display:block;
 	list-style:none;
 	z-index:3;
+	padding-inline-start: 0px;
 }
 #navigation a{
 	color: #444;
@@ -58,7 +59,7 @@ body{
 }
 .content{
 	right: 40px;
-	left: 300px;
+	left: 275px;
 	top: 0px;
 	position: absolute;
 
