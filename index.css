@@ -80,8 +80,8 @@
 	margin: 3px 0px;
 }
 #home:target ~ #header #navigation #link-home,
-#portfolio:target ~ #header #navigation #link-portfolio,
 #about:target ~ #header #navigation #link-about,
+#resume:target ~ #header #navigation #link-resume,
 #contact:target ~ #header #navigation #link-contact{
 	background: #000;
 	color: #fff;
