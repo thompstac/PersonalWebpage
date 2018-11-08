@@ -8,7 +8,7 @@
 	font-size: 30px;
 	font-weight: 400;
 	text-transform: uppercase;
-	color: rgba(255,255,255,0.9);
+	color: #668284;
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
 	padding: 20px;
 	background: #000;
@@ -23,8 +23,7 @@
 #navigation a{
 	color: #444;
 	display: block;
-	background: #fff;
-	background: rgba(255,255,255,0.9);
+	background: #668284;
 	line-height: 50px;
 	padding: 0px 20px;
 	text-transform: uppercase;
@@ -33,7 +32,10 @@
 	font-size: 14px;
 }
 #navigation a:hover {
-	background: #ddd;
+	background: #668284;
+}
+body{
+	background-color: #B9D7D9;
 }
 .panel{
 	min-width: 100%;
@@ -42,7 +44,7 @@
 	overflow-x: hidden;
 	margin-top: -150%;
 	position: absolute;
-	background: #000;
+	background: #2A2829;
 	box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
 	z-index: 2;
 	-webkit-transition: all .8s ease-in-out;
@@ -52,37 +54,36 @@
 }
 .panel:target{
 	margin-top: 0%;
-	background-color: #BB8AA6;
+	background-color: #7B3B3B;
 }
 .content{
 	right: 40px;
-	left: 280px;
+	left: 300px;
 	top: 0px;
 	position: absolute;
-	padding-bottom: 30px;
+
+
 }
 .content h2{
 	font-size: 110px;
-	padding: 10px 0px 20px 0px;
-	margin-top: 52px;
+	padding: 10px 0px 0px 0px;
+	margin: 52px 0px 52px 0px;
 	color: #fff;
-	color: rgba(255,255,255,0.9);
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
 }
 .content p{
 	font-size: 18px;
-	padding: 10px;
+	padding: 15px;
 	line-height: 24px;
 	color: #fff;
 	display: inline-block;
 	background: black;
-	padding: 10px;
-	margin: 3px 0px;
+	margin: 0px 0px 0px 15px;
 }
 #home:target ~ #header #navigation #link-home,
 #about:target ~ #header #navigation #link-about,
 #resume:target ~ #header #navigation #link-resume,
 #contact:target ~ #header #navigation #link-contact{
-	background: #000;
-	color: #fff;
+	background: #493736;
+	color: #B9D7D9;
 }
