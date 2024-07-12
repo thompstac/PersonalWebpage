@@ -3,6 +3,15 @@ body {
   text-align: center;
 }
 
+.title-bar {
+  margin: 20px 0;
+}
+
+.title-bar img {
+  width: 50%; /* Adjust the width as needed */
+  max-width: 1100px; /* Optional: Set a maximum width */
+}
+
 #jeopardy-board {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -12,26 +21,50 @@ body {
 }
 
 .jeopardy-cell {
-  background-color: #007bff;
   color: white;
-  padding: 20px; /* Keep the padding same to maintain box size */
+  padding: 40px;
   border-radius: 5px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px; /* Increased font size */
+  font-size: 24px;
   font-weight: bold;
 }
 
 .header-cell {
-  background-color: #0056b3; /* Different color for header cells */
-  cursor: default; /* Disable pointer cursor for header cells */
-  font-size: 24px; /* Increased font size for header cells */
+  cursor: default;
+  font-size: 24px;
+  background-color: #5A718C; /* Category row color */
 }
 
 .jeopardy-cell:hover {
-  background-color: #0056b3;
+  opacity: 0.8;
+}
+
+.answered {
+  background-color: #555; /* Change to a grey color to indicate answered */
+  color: #ccc; /* Change text color to indicate answered */
+}
+
+.column-1 {
+  background-color: #f24c3e;
+}
+
+.column-2 {
+  background-color: #fc6e4a;
+}
+
+.column-3 {
+  background-color: #ffbba8;
+}
+
+.column-4 {
+  background-color: #bbcad1;
+}
+
+.column-5 {
+  background-color: #8ca4be;
 }
 
 #question-modal {
@@ -48,11 +81,13 @@ body {
 
 #modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 50%;
+  max-width: 600px;
   position: relative;
+  border-radius: 10px;
 }
 
 #close-modal {
@@ -78,8 +113,11 @@ body {
 .answer {
   font-size: 20px;
   font-weight: bold;
-  color: black;
+  color: white;
   margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #5A718C;
+  border-radius: 5px;
 }
 
 button {
