@@ -3,7 +3,7 @@ const modal = document.createElement('div');
 const modalContent = document.createElement('div');
 const closeModal = document.createElement('span');
 
-const categories = ['Would She Rather (Jim's Edition)', 'Would He Rather', 'By the Numbers', 'Travel', 'Food/Drink'];
+const categories = ["Would She Rather (Jim's Edition)", 'Would He Rather', 'By the Numbers', 'Travel', 'Food/Drink'];
 const questions = [
   ['Question 1-100', 'Question 1-200', 'Question 1-300', 'Question 1-400', 'Question 1-500'],
   ['Question 2-100', 'Question 2-200', 'Question 2-300', 'Question 2-400', 'Question 2-500'],
