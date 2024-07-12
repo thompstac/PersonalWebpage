@@ -34,21 +34,23 @@ closeModal.addEventListener('click', () => {
   modalContent.appendChild(closeModal);
 });
 
-function createJeopardyCell(text, question, answer, isClickable) {
+function createJeopardyCell(text, question, answer, isClickable, columnIndex) {
   const cell = document.createElement('div');
   cell.classList.add('jeopardy-cell');
   if (!isClickable) {
     cell.classList.add('header-cell');
+  } else {
+    cell.classList.add(`column-${columnIndex + 1}`);
+    cell.addEventListener('click', () => showQuestion(question, answer, cell));
   }
   cell.innerText = text;
-  if (isClickable) {
-    cell.addEventListener('click', () => showQuestion(question, answer));
-  }
   return cell;
 }
 
-function showQuestion(question, answer) {
+function showQuestion(question, answer, cell) {
   modal.style.display = 'block';
+  modalContent.style.backgroundColor = window.getComputedStyle(cell).backgroundColor;
+
   const questionText = document.createElement('div');
   questionText.classList.add('question');
   questionText.innerText = question;
@@ -58,6 +60,8 @@ function showQuestion(question, answer) {
   answerButton.addEventListener('click', () => {
     answerText.style.display = 'block';
     answerButton.style.display = 'none';
+    cell.classList.add('answered');
+    cell.style.pointerEvents = 'none'; // Make the cell unclickable
   });
 
   const answerText = document.createElement('div');
@@ -71,8 +75,8 @@ function showQuestion(question, answer) {
 }
 
 // Create headers
-categories.forEach(category => {
-  jeopardyBoard.appendChild(createJeopardyCell(category, '', '', false));
+categories.forEach((category, columnIndex) => {
+  jeopardyBoard.appendChild(createJeopardyCell(category, '', '', false, columnIndex));
 });
 
 // Create question cells
@@ -81,6 +85,6 @@ for (let i = 0; i < 5; i++) {
     const question = questions[j][i];
     const answer = answers[j][i];
     const points = (i + 1) * 100;
-    jeopardyBoard.appendChild(createJeopardyCell(points, question, answer, true));
+    jeopardyBoard.appendChild(createJeopardyCell(points, question, answer, true, j));
   }
 }
