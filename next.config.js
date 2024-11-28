@@ -2,9 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com'],
+    unoptimized: true, // Disables image optimization for static export
   },
-}
+  output: 'export', // Enables static export
+  trailingSlash: true, // Adds trailing slashes to paths for GitHub Pages
+};
 
-module.exports = nextConfig
-
+module.exports = nextConfig;
