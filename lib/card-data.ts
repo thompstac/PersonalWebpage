@@ -3,6 +3,7 @@ export interface CardData {
   title: string
   description: string
   details: string
+  imageUrl: string
   category: string
 }
 
@@ -20,6 +21,7 @@ export const cardData: CardData[] = [
     title: 'Deep Breathing',
     description: 'Practice deep breathing techniques',
     details: 'Inhale deeply through your nose for 4 counts, hold for 4 counts, then exhale slowly through your mouth for 6 counts. Repeat 5 times.',
+    imageUrl:'/images/wed.jpg',
     category: 'Body Awareness'
   },
   {
@@ -27,6 +29,7 @@ export const cardData: CardData[] = [
     title: 'Progressive Muscle Relaxation',
     description: 'Relax your body from head to toe',
     details: 'Start by tensing and then relaxing each muscle group in your body, beginning with your toes and working your way up to your head.',
+    imageUrl:'/images/wed.jpg',
     category: 'Mental Exercises'
   },
   {
@@ -34,6 +37,7 @@ export const cardData: CardData[] = [
     title: 'Gentle Swaying',
     description: 'Move your body gently from side to side',
     details: 'Stand with your feet shoulder-width apart and gently sway your hips from side to side. This can help ease discomfort and promote relaxation.',
+    imageUrl:'/images/wed.jpg',
     category: 'Body Awareness'
   },
   {
@@ -41,6 +45,7 @@ export const cardData: CardData[] = [
     title: 'Positive Affirmation',
     description: 'Repeat a positive affirmation',
     details: 'Say to yourself: "I am strong, capable, and ready to bring new life into this world." Repeat this affirmation several times, focusing on its meaning.',
+    imageUrl:'/images/wed.jpg',
     category: 'Mental Exercises'
   },
   {
@@ -48,15 +53,15 @@ export const cardData: CardData[] = [
     title: 'Peaceful Place Visualization',
     description: 'Visualize a calm and peaceful place',
     details: 'Close your eyes and imagine yourself in a serene, peaceful place. It could be a beach, a forest, or any place that makes you feel calm and relaxed. Focus on the details of this place using all your senses.',
+    imageUrl:'/images/wed.jpg',
     category: 'Visualization Activities'
   },
   {
     id: '6',
     title: 'Yoga Ball Child\'s Pose',
     description: 'Rest and relax using a birth ball for support',
-    details: `Kneel on the ground with a birth ball in front of you. Drape your upper body over the ball, allowing it to support your weight. This position can help relieve back pressure and provide comfort during contractions.
-
-    ![Yoga Ball Child's Pose](${process.env.NEXT_PUBLIC_BLOB_URL}/birth-QJu9fZ9pZzfasGKYvzGyKjpLpKL29J.png)`,
+    details: 'Kneel on the ground with a birth ball in front of you. Drape your upper body over the ball, allowing it to support your weight. This position can help relieve back pressure and provide comfort during contractions.',
+    imageUrl:'/images/wed.jpg',
     category: 'Labor Positions'
   },
   // Add more cards for each category...
