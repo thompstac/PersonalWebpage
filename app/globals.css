@@ -2,29 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 251, 212, 214;
-  --background-start-rgb: 228, 122, 128;
-  --background-end-rgb: 228, 122, 128;
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-/* Add text shadow for better readability */
-h1, h2, h3, h4, h5, h6, p, span, button {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* Adjust button text color for better contrast */
-button {
-  color: #ffffff;
+  background-color: #e47a80;
+  color: #fbd4d6;
 }
 
