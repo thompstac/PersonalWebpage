@@ -16,7 +16,7 @@ export default function CategorySelector() {
               key={category.name}
               className="p-4 rounded-lg text-lg font-semibold transition-colors"
               style={{
-                backgroundColor: category.color,
+                backgroundColor: category.primary,
                 color: '#fbd4d6',
               }}
               onClick={() => setSelectedCategory(category.name)}
