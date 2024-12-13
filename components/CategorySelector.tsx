@@ -4,14 +4,6 @@ import { useState } from 'react'
 import CardDeck from './CardDeck'
 import { categories } from '@/lib/card-data'
 
-// const categories = [
-//   { name: 'Mental Exercises', color: '#b33687', lightColor: '#f2adda' },
-//   { name: 'Body Awareness', color: '#e79775', lightColor: '#ebcfc4' },
-//   { name: 'Visualization Activities', color: '#7c68d1', lightColor: '#bdb0f3' },
-//   { name: 'Labor Activities', color: '#8ec4cb', lightColor: '#d1f9fe' },
-//   { name: 'Birth Positions', color: '#89e1ae', lightColor: '#d2fce4' },
-// ]
-
 export default function CategorySelector() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
 

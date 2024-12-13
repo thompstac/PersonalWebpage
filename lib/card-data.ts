@@ -64,6 +64,14 @@ export const cardData: CardData[] = [
     imageUrl:'/images/wed.jpg',
     category: 'Labor Positions'
   },
+   {
+    id: '7',
+    title: 'asdf',
+    description: 'asdf',
+    details: 'asdfd',
+    imageUrl:'/images/wed.jpg',
+    category: 'Birth Positions'
+  },
   // Add more cards for each category...
 ]
 
